@@ -1,0 +1,66 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #10223b;
+  background-color: #f3f6fb;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #0046a5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.layout {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.layout__title {
+  margin: 0 0 1rem;
+}
+
+.layout__nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.layout__content {
+  background: #ffffff;
+  border: 1px solid #d8e2f4;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.courses__toolbar {
+  margin-bottom: 1rem;
+}
+
+.courses__button {
+  border: 1px solid #99b3df;
+  background: #e8eefb;
+  color: #10223b;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.courses__button:hover {
+  background: #dbe7ff;
+}
