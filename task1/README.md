@@ -1,24 +1,23 @@
-# Lab 06 - Task 1 (React Router Basics)
+# Лабораторная работа 06 - Задание 1 (Основы React Router)
 
-## Student info
-- Name: [Your Name]
-- Student ID: [Your ID]
-- Date: 2026-02-21
+## Информация о студенте
+- Имя: Коваленко Илья
+- Дата: 2026-02-21
 
-## What is implemented
-- React + TypeScript app created with Vite.
-- Router configured with `createBrowserRouter`.
-- Shared layout component with navigation links.
-- Nested routes rendered through `<Outlet />`.
-- Pages: Home, About, Contact, and `404 Not Found`.
+## Что реализовано
+- Приложение React + TypeScript, созданное с помощью Vite.
+- Настроена маршрутизация с использованием `createBrowserRouter`.
+- Создан общий компонент макета с навигационными ссылками.
+- Вложенные маршруты отображаются через `<Outlet />`.
+- Страницы: Главная, О нас, Контакты и `404 Страница не найдена`.
 
-## Run
+## Запуск
 ```bash
 npm install
 npm run dev
 ```
 
-## Build check
+## Проверка сборки
 ```bash
 npm run build
 ```
