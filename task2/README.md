@@ -1,38 +1,38 @@
-# Lab 06 - Task 2 (Dynamic Routes + Query Params)
+# Лабораторная работа 06 - Задание 2 (Динамические маршруты + Query-параметры)
 
-## Student info
-- Name: [Your Name]
-- Student ID: [Your ID]
-- Date: 2026-02-21
+## Информация о студенте
+- Имя: Коваленко Илья
+- Дата: 2026-02-21
 
-## Implemented files
-- `src/data.ts` with `Course` interface and mock course data.
-- `src/pages/CourseDetail.tsx` using `useParams` + `useLoaderData`.
-- `src/pages/Courses.tsx` with `Link` list and sorting via `useSearchParams`.
-- `src/main.tsx` with updated routes including `/courses/:id`, `loader`, and `errorElement`.
+## Реализованные файлы
+- `src/data.ts` с интерфейсом `Course` и тестовыми (mock) данными курсов.
+- `src/pages/CourseDetail.tsx` с использованием `useParams` + `useLoaderData`.
+- `src/pages/Courses.tsx` со списком `Link` и сортировкой через `useSearchParams`.
+- `src/main.tsx` с обновлёнными маршрутами, включая `/courses/:id`, `loader` и `errorElement`.
 
-## URL parameters vs query parameters
+## URL-параметры и query-параметры
 - `useParams`:
-  Use this when data is part of the route path itself, for example `/courses/:id`.
-  It is best for identifying a specific resource.
+  Используется, когда данные являются частью пути маршрута, например `/courses/:id`.
+  Подходит для идентификации конкретного ресурса.
+
 - `useSearchParams`:
-  Use this when data is optional UI state or filtering, for example `/courses?sort=asc`.
-  It is best for view settings that do not change which resource is selected.
+  Используется, когда данные представляют собой необязательное состояние интерфейса или фильтрацию, например `/courses?sort=asc`.
+  Подходит для настроек отображения, которые не изменяют выбранный ресурс.
 
-## Verification checklist
-- `/courses` renders links built as `/courses/${id}`.
-- Clicking a course opens details without full page reload.
-- `/courses/999` shows route error element.
-- Sort button toggles URL between `?sort=asc` and `?sort=desc`.
-- Course list order changes based on query parameter.
+## Чек-лист проверки
+- `/courses` отображает ссылки вида `/courses/${id}`.
+- При нажатии на курс открывается страница деталей без полной перезагрузки.
+- `/courses/999` отображает элемент ошибки маршрута.
+- Кнопка сортировки переключает URL между `?sort=asc` и `?sort=desc`.
+- Порядок списка курсов изменяется в зависимости от query-параметра.
 
-## Run
+## Запуск
 ```bash
 npm install
 npm run dev
 ```
 
-## Build check
+## Проверка сборки
 ```bash
 npm run build
 ```
